@@ -5,6 +5,7 @@ var document = jsdom.jsdom("<html><body></body></html>");
 global.document = document;
 global.Image = canvas.Image;
 global.window = document.parentWindow;
+global.window.process = process;
 global.PIXI = require('pixi.js/bin/pixi.js');
 global.p2 = require('p2');
 global.navigator = {userAgent: 'node.js'};
